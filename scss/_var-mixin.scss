@@ -19,6 +19,7 @@ $colorvino: #A60321;
     border:none;
     color: white;
     margin-top: 10px;
+    text-decoration: none;
 }
 @mixin titulosmobile {
     font-size: 22px;
@@ -35,4 +36,15 @@ $colorvino: #A60321;
 @mixin subtitulos {
     font-size: 22px;
     font-weight: 500;
+}
+@mixin butonhover{
+    width: 255px;
+    height: 40px;
+    background: #A60321;
+    box-shadow: 0px 10px 10px rgba(122, 122, 122, 0.25);
+    border-radius: 5px;
+    border:none;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
 }

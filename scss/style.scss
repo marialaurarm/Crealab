@@ -44,6 +44,9 @@ nav{
         font-size: 18px;
         @include boton;
     }
+    a:hover{
+        @include butonhover;
+    }
 }
 .scroll{
     display: flex;
@@ -85,8 +88,18 @@ nav{
         font-size: 18px;
         @include boton;
     }
+    a:hover{
+        @include butonhover;
+    }
 }
 footer{
+    a{
+        color: #A60321;
+    }
+    a:hover{
+        color: #A60321;
+        text-decoration: none;
+    }
     .icono{
         background-color: $colorvino;
         height: 70px;
@@ -118,6 +131,7 @@ footer{
 }
 .head-market{
     background-image: url(../img/headmarket.jpg);
+    background-size: 100%;
     width: 100%;
     height: 200px;
     margin-top: 60px;
@@ -197,15 +211,29 @@ h1{
         .boton{
             @include boton;
         }
+        .boton{
+            @include butonhover;
+        }
     }
 }
 .crealabfreelancer{
-    .head-crealab{
-        background-image: url(../img/headcrealab.jpg);
-        width: 100%;
-        height: 200px;
-        margin-top: 60px;
-        background-repeat: no-repeat;
+    .header{
+        .head-crealab{
+            background-image: url(../img/headcrealab.jpg);
+            background-size: 100%;
+            width: 100%;
+            height: 200px;
+            margin-top: 60px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        p{
+            @include titulos;
+            color: white;
+            position: absolute;
+            top: 160px;
+            right: 15px;
+        }
     }
     .sub{
         @include subtitulos;
@@ -361,7 +389,6 @@ h1{
     }
     .list-group{
         list-style-type: none;
-        border-radius: none !important;
     }
 
     .micuenta{
@@ -443,9 +470,9 @@ h1{
             @include boton;
         }
     
-    }
-    
 }
+}
+
 @media (min-width: 640px) {
     i.icono {display:none}
     input.buscador {display:inline-block}
